@@ -58,6 +58,15 @@ Full Question Link: [Link](https://datalemur.com/questions/laptop-mobile-viewers
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/b7a5a9ea-9b13-4e92-a353-8ae16e65b937)
 
+# DAY-5
+  ## Question: Average Post Hiatus (Part 1) [Facebook SQL Interview Question]
+
+Given a table of Facebook posts, for each user who posted at least twice in 2021, write a query to find the number of days between each user’s first post of the year and last post of the year in the year 2021. Output the user and number of the days between each user's first and last post.
+
+Full Question Link: [Link](https://datalemur.com/questions/sql-average-post-hiatus-1)
+
+## Solution: 
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/ecbee351-f664-4dfb-a913-86ac11d883a5)
 
 
 

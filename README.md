@@ -69,4 +69,19 @@ Full Question Link: [Link](https://datalemur.com/questions/sql-average-post-hiat
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/ecbee351-f664-4dfb-a913-86ac11d883a5)
 
 
+# DAY-6
+  ## Question: Teams Power Users [Microsoft SQL Interview Question]
+
+Write a query to identify the top 2 Power Users who sent the highest number of messages on Microsoft Teams in August 2022. Display the IDs of these 2 users along with the total number of messages they sent. Output the results in descending order based on the count of the messages.
+
+Assumption:
+
+No two users have sent the same number of messages in August 2022.
+
+Full Question Link: [Link](https://datalemur.com/questions/teams-power-users)
+
+## Solution: 
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/4a112188-7bea-4cb3-b2f2-ddd2b0862c46)
+
+
 

@@ -83,5 +83,26 @@ Full Question Link: [Link](https://datalemur.com/questions/teams-power-users)
 ## Solution: 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/4a112188-7bea-4cb3-b2f2-ddd2b0862c46)
 
+# DAY-7
+  ## Question: Sending vs. Opening Snaps [Snapchat SQL Interview Question]
+Assume you're given tables with information on Snapchat users, including their ages and time spent sending and opening snaps.
+
+Write a query to obtain a breakdown of the time spent sending vs. opening snaps as a percentage of total time spent on these activities grouped by age group. Round the percentage to 2 decimal places in the output.
+
+Notes:
+
+Calculate the following percentages:
+* time spent sending / (Time spent sending + Time spent opening)
+* Time spent opening / (Time spent sending + Time spent opening)
+* To avoid integer division in percentages, multiply by 100.0 and not 100.
+
+Full Question Link: [Link](https://datalemur.com/questions/time-spent-snaps)
+
+## Solution: 
+
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/fc7fa233-8b50-4768-bbb5-8158e82ecf4f)
+
+
+
 
 

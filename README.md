@@ -118,9 +118,17 @@ Full Question Link: [Link](https://datalemur.com/questions/teams-power-users)
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/84e38a30-0290-422b-ba6b-a1c1deab358e)
 
+## Question: Second Highest Salary (Oracle Interview Question)
+  
+ Write a solution to find the second highest salary from the Employee table. If there is no second highest salary, return null (return None in Pandas).
 
+The result format is in the following example.
 
+Full Question Link: [Link](https://leetcode.com/problems/second-highest-salary/description/)
 
+## Solution: 
+
+![Solution]![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/d7525137-79bf-4cd3-8a4f-6cfbb4fb8bd7)
 
 
 

@@ -102,6 +102,24 @@ Full Question Link: [Link](https://datalemur.com/questions/time-spent-snaps)
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/fc7fa233-8b50-4768-bbb5-8158e82ecf4f)
 
+# DAY-8
+  ## Question: Teams Power Users [Microsoft SQL Interview Question]
+  
+Write a query to identify the top 2 Power Users who sent the highest number of messages on Microsoft Teams in August 2022. Display the IDs of these 2 users along with the total number of messages they sent. Output the results in descending order based on the count of the messages.
+
+Assumption:
+
+No two users have sent the same number of messages in August 2022.
+messages Table:
+
+Full Question Link: [Link](https://datalemur.com/questions/teams-power-users)
+
+## Solution: 
+
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/84e38a30-0290-422b-ba6b-a1c1deab358e)
+
+
+
 
 
 

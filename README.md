@@ -128,7 +128,22 @@ Full Question Link: [Link](https://leetcode.com/problems/second-highest-salary/d
 
 ## Solution: 
 
-![Solution]![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/d7525137-79bf-4cd3-8a4f-6cfbb4fb8bd7)
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/d7525137-79bf-4cd3-8a4f-6cfbb4fb8bd7)
+
+# Day 9
+## Question: Consecutive Numbers
+  
+Find all numbers that appear at least three times consecutively.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+Full Question Link: [Link](https://leetcode.com/problems/consecutive-numbers/)
+
+## Solution: 
+
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/7a90f767-89a0-4f4b-9150-cc9baac5b527)
 
 
 

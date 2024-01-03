@@ -146,4 +146,28 @@ Full Question Link: [Link](https://leetcode.com/problems/consecutive-numbers/)
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/7a90f767-89a0-4f4b-9150-cc9baac5b527)
 
 
+# Day 10
+## Question: Employees Earning More Than Their Managers
+
+  Write a solution to find the employees who earn more than their managers. Return the result table in any order. The result format is in the following example.
+Full Question Link: [Link](https://leetcode.com/problems/employees-earning-more-than-their-managers/?envType=list&envId=p764rm3e)
+
+## Solution: 
+
+![Solution] (https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/102ca150-6766-4427-8d12-b40d1434b36f)
+
+## Question: Customers Who Never Order
+
+Write a solution to find all customers who never order anything.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+Full Question Link: [Link](https://leetcode.com/problems/customers-who-never-order/)
+
+## Solution: 
+
+![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/afe86838-8b30-41dd-8265-ca75d12d689d)
+
 

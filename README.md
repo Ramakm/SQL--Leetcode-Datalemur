@@ -170,4 +170,29 @@ Full Question Link: [Link](https://leetcode.com/problems/customers-who-never-ord
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/afe86838-8b30-41dd-8265-ca75d12d689d)
 
+# Day 10
+## Question: Department Top Three Salaries
+
+A company's executives are interested in seeing who earns the most money in each of the company's departments. A high earner in a department is an employee who has a salary in the top three unique salaries for that department.
+
+Write a solution to find the employees who are high earners in each of the departments.
+
+Return the result table in any order.
+
+Full Question Link: [Link](https://leetcode.com/problems/department-top-three-salaries/?envType=list&envId=p764rm3e)
+
+## Solution: 
+
+![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/319f27d5-a0d7-4dce-9a71-e4c68c8f1d57)
+
+## Question: Department Highest Salary
+ Write a solution to find employees who have the highest salary in each of the departments.
+
+Return the result table in any order.
+
+Full Question Link: [Link](https://leetcode.com/problems/department-highest-salary/?envType=list&envId=p764rm3e)
+
+## Solution: 
+
+![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/5cb0f248-232c-4283-801b-dc5c06fd6f4d)
 

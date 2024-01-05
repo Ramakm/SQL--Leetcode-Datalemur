@@ -196,3 +196,24 @@ Full Question Link: [Link](https://leetcode.com/problems/department-highest-sala
 
 ![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/5cb0f248-232c-4283-801b-dc5c06fd6f4d)
 
+
+# Day 12
+## Question: Scenario Based Question
+
+Consider a scenario where you have a database table named Orders with columns such as 𝐎𝐫𝐝𝐞𝐫𝐈𝐃, 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐈𝐃, 𝐚𝐧𝐝 𝐎𝐫𝐝𝐞𝐫𝐃𝐚𝐭𝐞. 𝐓𝐡𝐞 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐈𝐃 column allows 𝐍𝐔𝐋𝐋 values, indicating orders from customers who haven't registered. However, you need to find the total number of orders for each customer along with their names, including those who haven't registered (𝐍𝐔𝐋𝐋, 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐈𝐃).
+
+### Full Question:
+
+Tell me the challenges to retrieve the customer names and the total number of orders placed by each customer, considering 𝐍𝐔𝐋𝐋 values in the 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫𝐈𝐃 column. 
+
+
+## Solution:
+
+𝑆𝐸𝐿𝐸𝐶𝑇 
+  𝐶𝑂𝐴𝐿𝐸𝑆𝐶𝐸(𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑁𝑎𝑚𝑒, '𝑁𝑜𝑡 𝑅𝑒𝑔𝑖𝑠𝑡𝑒𝑟𝑒𝑑') 𝐴𝑆 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑁𝑎𝑚𝑒,
+  𝐶𝑂𝑈𝑁𝑇(𝑂𝑟𝑑𝑒𝑟𝐼𝐷) 𝐴𝑆 𝑇𝑜𝑡𝑎𝑙𝑂𝑟𝑑𝑒𝑟𝑠
+𝐹𝑅𝑂𝑀 𝑂𝑟𝑑𝑒𝑟𝑠 𝑜
+𝐿𝐸𝐹𝑇 𝐽𝑂𝐼𝑁 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑠 𝑐 𝑂𝑁 𝑜.𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝐼𝐷 = 𝑐.𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝐼𝐷
+𝐺𝑅𝑂𝑈𝑃 𝐵𝑌 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑁𝑎𝑚𝑒;
+
+

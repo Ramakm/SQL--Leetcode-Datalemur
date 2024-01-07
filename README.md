@@ -170,7 +170,7 @@ Full Question Link: [Link](https://leetcode.com/problems/customers-who-never-ord
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/afe86838-8b30-41dd-8265-ca75d12d689d)
 
-# Day 10
+# Day 11
 ## Question: Department Top Three Salaries
 
 A company's executives are interested in seeing who earns the most money in each of the company's departments. A high earner in a department is an employee who has a salary in the top three unique salaries for that department.
@@ -215,5 +215,49 @@ Tell me the challenges to retrieve the customer names and the total number of or
 𝐹𝑅𝑂𝑀 𝑂𝑟𝑑𝑒𝑟𝑠 𝑜
 𝐿𝐸𝐹𝑇 𝐽𝑂𝐼𝑁 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑠 𝑐 𝑂𝑁 𝑜.𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝐼𝐷 = 𝑐.𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝐼𝐷
 𝐺𝑅𝑂𝑈𝑃 𝐵𝑌 𝐶𝑢𝑠𝑡𝑜𝑚𝑒𝑟𝑁𝑎𝑚𝑒;
+
+# Day 14
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 𝐒𝐜𝐞𝐧𝐚𝐫𝐢𝐨 𝐁𝐚𝐬𝐞𝐬 𝐒𝐐𝐋 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧 (𝐇𝐂𝐋)❔
+You have been provided with a table containing columns for 𝒖𝒔𝒆𝒓 𝑰𝑫, 𝒕𝒓𝒂𝒏𝒔𝒂𝒄𝒕𝒊𝒐𝒏 𝒂𝒎𝒐𝒖𝒏𝒕, 𝒂𝒏𝒅 𝒕𝒊𝒎𝒆 𝒐𝒇 𝒕𝒓𝒂𝒏𝒔𝒂𝒄𝒕𝒊𝒐𝒏 in datetime format. The positive transactions in the table are deposits and the negative transactions are withdrawals. The date in the output should be in the format ‘%𝒀-%𝒎-%𝒅’. Calculate the daily three-day rolling average for deposits made to a bank.
+
+🔹𝗖𝗿𝗲𝗮𝘁𝗲 𝘁𝗮𝗯𝗹𝗲
+
+CREATE TABLE BankTransactions (
+  UserID INT,
+  Amount DECIMAL(10, 2),
+  TransactionTime DATETIME
+);
+
+🔹𝗜𝗻𝘀𝗲𝗿𝘁 𝘀𝗮𝗺𝗽𝗹𝗲 𝗱𝗮𝘁𝗮
+
+INSERT INTO BankTransactions (UserID, Amount, TransactionTime)
+VALUES
+(1, 100.00, '2023-01-01 12:00:00'),
+(2, -50.00, '2023-01-01 14:00:00'),
+(1, 200.00, '2023-01-02 10:00:00'),
+(2, 150.00, '2023-01-02 15:30:00'),
+(1, 50.00, '2023-01-03 09:45:00'),
+(2, -30.00, '2023-01-03 16:20:00');
+
+## 𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧:
+
+-- 𝑄𝑢𝑒𝑟𝑦 𝑡𝑜 𝑐𝑎𝑙𝑐𝑢𝑙𝑎𝑡𝑒 𝑑𝑎𝑖𝑙𝑦 𝑡ℎ𝑟𝑒𝑒-𝑑𝑎𝑦 𝑟𝑜𝑙𝑙𝑖𝑛𝑔 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑓𝑜𝑟 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑠
+
+𝑊𝐼𝑇𝐻 𝐷𝑎𝑖𝑙𝑦𝐷𝑒𝑝𝑜𝑠𝑖𝑡𝑠 𝐴𝑆 (
+  𝑆𝐸𝐿𝐸𝐶𝑇
+    𝐷𝐴𝑇𝐸(𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝑇𝑖𝑚𝑒) 𝐴𝑆 𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝐷𝑎𝑡𝑒,
+    𝑆𝑈𝑀(𝐶𝐴𝑆𝐸 𝑊𝐻𝐸𝑁 𝐴𝑚𝑜𝑢𝑛𝑡 > 0 𝑇𝐻𝐸𝑁 𝐴𝑚𝑜𝑢𝑛𝑡 𝐸𝐿𝑆𝐸 0 𝐸𝑁𝐷) 𝐴𝑆 𝐷𝑎𝑖𝑙𝑦𝐷𝑒𝑝𝑜𝑠𝑖𝑡
+  𝐹𝑅𝑂𝑀 𝐵𝑎𝑛𝑘𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝑠
+  𝐺𝑅𝑂𝑈𝑃 𝐵𝑌 𝐷𝐴𝑇𝐸(𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝑇𝑖𝑚𝑒)
+)
+𝑆𝐸𝐿𝐸𝐶𝑇
+  𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝐷𝑎𝑡𝑒,
+  𝐷𝑎𝑖𝑙𝑦𝐷𝑒𝑝𝑜𝑠𝑖𝑡,
+  𝐴𝑉𝐺(𝐷𝑎𝑖𝑙𝑦𝐷𝑒𝑝𝑜𝑠𝑖𝑡) 𝑂𝑉𝐸𝑅 (𝑂𝑅𝐷𝐸𝑅 𝐵𝑌 𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝐷𝑎𝑡𝑒 𝑅𝑂𝑊𝑆 𝐵𝐸𝑇𝑊𝐸𝐸𝑁 2 𝑃𝑅𝐸𝐶𝐸𝐷𝐼𝑁𝐺 𝐴𝑁𝐷 𝐶𝑈𝑅𝑅𝐸𝑁𝑇 𝑅𝑂𝑊) 𝐴𝑆 𝑇ℎ𝑟𝑒𝑒𝐷𝑎𝑦𝑅𝑜𝑙𝑙𝑖𝑛𝑔𝐴𝑣𝑒𝑟𝑎𝑔𝑒
+𝐹𝑅𝑂𝑀 𝐷𝑎𝑖𝑙𝑦𝐷𝑒𝑝𝑜𝑠𝑖𝑡𝑠
+𝑂𝑅𝐷𝐸𝑅 𝐵𝑌 𝑇𝑟𝑎𝑛𝑠𝑎𝑐𝑡𝑖𝑜𝑛𝐷𝑎𝑡𝑒;
+
+𝑆𝐸𝐿𝐸𝐶𝑇 * 𝐹𝑅𝑂𝑀 𝑑𝑎𝑖𝑙𝑦_𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑠
 
 

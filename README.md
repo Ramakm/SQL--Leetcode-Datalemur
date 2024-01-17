@@ -342,7 +342,17 @@ Write a solution to find the first login date for each player. Return the result
 
 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑;
 ```
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: Exchange Seats
+Write a solution to swap the seat id of every two consecutive students. If the number of students is odd, the id of the last student is not swapped.
 
+Return the result table ordered by id in ascending order.
+```
+𝒔𝒆𝒍𝒆𝒄𝒕 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑,𝑚𝑖𝑛(𝑒𝑣𝑒𝑛𝑡_𝑑𝑎𝑡𝑒) 𝑎𝑠 𝑓𝑖𝑟𝑠𝑡_𝑙𝑜𝑔𝑖𝑛
+
+𝒇𝒓𝒐𝒎 𝐴𝑐𝑡𝑖𝑣𝑖𝑡𝑦
+
+𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑;
+```
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra

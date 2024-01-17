@@ -292,9 +292,9 @@ Write a solution to 𝐝𝐞𝐥𝐞𝐭𝐞 all duplicate emails, keeping only 
 
 ![Solution](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/49591f30-d944-4f26-8c01-d20ae65f697c)
 
-# 𝐃𝐀𝐘 𝟏𝟕: 𝐂𝐚𝐩𝐢𝐭𝐚𝐥 𝐆𝐚𝐢𝐧/𝐋𝐨𝐬𝐬
+# 𝐃𝐀𝐘 𝟏𝟕: 
 
-## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧:
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 𝐂𝐚𝐩𝐢𝐭𝐚𝐥 𝐆𝐚𝐢𝐧/𝐋𝐨𝐬𝐬
 
 Write a solution to report the Capital gain/loss for each stock.
 The Capital gain/loss of a stock is the total gain or loss after buying and selling the stock one or many times. Return the result table in any order.
@@ -302,9 +302,9 @@ The Capital gain/loss of a stock is the total gain or loss after buying and sell
 ## Solution: 
 ![image](https://github.com/Ramakm/SQL-Interview-Prep/assets/8182816/79461768-3de7-480d-ba1b-df7c404b3ceb)
 
-# 𝐃𝐀𝐘 𝟏8: Fix Dating Problem
+# 𝐃𝐀𝐘 𝟏8: 
 
-## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧:
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: Fix Dating Problem
 Dating problem by creating new table and selecting choices as per your wish and requirement.
 
 ## Solution:
@@ -329,6 +329,20 @@ Dating problem by creating new table and selecting choices as per your wish and 
  and Music_Preferences = "Indi"
 𝗢𝗥𝗗𝗘𝗥 𝗕𝗬 Compatibility_score 𝗗𝗘𝗦𝗖;
 ```
+
+# 𝐃𝐀𝐘 𝟏9: 
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 𝐀𝐝𝐨𝐛𝐞 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞(𝐑𝐨𝐮𝐧𝐝 𝟏)
+Write a solution to find the first login date for each player. Return the result table in any order.
+
+```
+𝒔𝒆𝒍𝒆𝒄𝒕 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑,𝑚𝑖𝑛(𝑒𝑣𝑒𝑛𝑡_𝑑𝑎𝑡𝑒) 𝑎𝑠 𝑓𝑖𝑟𝑠𝑡_𝑙𝑜𝑔𝑖𝑛
+
+𝒇𝒓𝒐𝒎 𝐴𝑐𝑡𝑖𝑣𝑖𝑡𝑦
+
+𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑;
+```
+
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra

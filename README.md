@@ -353,6 +353,37 @@ Return the result table ordered by id in ascending order.
 
 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝑝𝑙𝑎𝑦𝑒𝑟_𝑖𝑑;
 ```
+
+# 𝐃𝐀𝐘 20: 
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 
+Navigating 𝗡𝘂𝗹𝗹𝘀 vs 𝗘𝗺𝗽𝘁𝘆 Data Sets!
+
+## Solution:
+
+````
+-- Create Table
+
+CREATE TABLE employees (
+  employee_id INT PRIMARY KEY,
+  employee_name VARCHAR(255),
+  salary INT,
+  department_id INT
+);
+
+INSERT INTO employees VALUES
+
+(1, "Alice", 50000, 101),
+(2, "Bob", 60000, 102),
+(3, 'Charlie', 55000, 101),
+(4, 'David', 70000, 103),
+(5, 'Eva', 48000, 102);
+
+
+SELECT employee_name FROM employees WHERE salary < 45000;
+
+SELECT (SELECT employee_name FROM employees WHERE salary < 45000);
+````
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra

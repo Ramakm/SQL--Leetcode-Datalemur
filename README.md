@@ -384,6 +384,27 @@ SELECT employee_name FROM employees WHERE salary < 45000;
 
 SELECT (SELECT employee_name FROM employees WHERE salary < 45000);
 ````
+
+# 𝐃𝐀𝐘 21: 
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 
+Write a solution to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
+Return the result table in any order.
+
+## Solution:
+```
+
+WITH WeatherCTE AS (
+    SELECT
+        w1.id AS id1,
+        w2.id AS id2
+    FROM
+        Weather w1
+        JOIN Weather w2 ON DATEDIFF(w1.recordDate, w2.recordDate) = 1 AND w1.temperature > w2.temperature
+)
+SELECT id1 AS id
+FROM WeatherCTE;
+```
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra

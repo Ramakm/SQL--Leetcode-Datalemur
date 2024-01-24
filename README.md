@@ -405,6 +405,27 @@ WITH WeatherCTE AS (
 SELECT id1 AS id
 FROM WeatherCTE;
 ```
+# 𝐃𝐀𝐘 22: 
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 
+Given a table of sales transactions with information about the date of the sale, the type of fruit (e.g., apples or oranges),
+and the quantity sold, how can we calculate the daily difference in the number of apples/oranges sold?
+
+## Solution:
+```
+with apple as(
+select * from fruits_table where fruits = 'apples'),
+
+orange as(
+select * from fruits_table where fruits = 'oranges'),
+
+merged as(
+select a.sales_date, a.fruits as apple_fruit, o.fruits as orange_fruit,a.sold_num as apple_sold,
+o.sold_num as orange_sold from apple a left join orange o on a.sales_date = o.sales_date)
+
+select sales_date, (apple_sold - orange_sold) as diff
+from merged;
+```
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra

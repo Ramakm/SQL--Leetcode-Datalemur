@@ -426,6 +426,44 @@ o.sold_num as orange_sold from apple a left join orange o on a.sales_date = o.sa
 select sales_date, (apple_sold - orange_sold) as diff
 from merged;
 ```
+
+# 𝐃𝐀𝐘 23: 
+
+## 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 
+Table: Employees
+
+------------------------
+| Column Name | Type    |
+|-------------|---------|
+| id          | int     |
+| name        | varchar |
+
+id is the primary key (column with unique values) for this table.
+Each row of this table contains the id and the name of an employee in a company.
+ 
+
+Table: EmployeeUNI
+
+| Column Name | Type |
+|-------------|------|
+| id          | int  |
+| unique_id   | int  |
+
+(id, unique_id) is the primary key (combination of columns with unique values) for this table.
+Each row of this table contains the id and the corresponding unique id of an employee in the company.
+ 
+
+Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
+
+Return the result table in any order.
+
+## Solution:
+```
+select unique_id ,name
+from employees as emp
+left join employeeUNI as uni
+on uni.id = emp.id
+```
 # Follow Me
 
 ### Linkedin : @ramakrushnamohapatra
